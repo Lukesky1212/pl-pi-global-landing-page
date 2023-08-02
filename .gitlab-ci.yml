@@ -20,9 +20,9 @@ pages:
     NODE_ENV: production
     PUBLIC_URL: https://lucas.atala.gitlab.io/GLP/
   script:
-    - cp public/index.html public/404.html
+    - cp build/index.html public/404.html
   artifacts:
     paths:
-      - public
+      - build
   only:
     - master
