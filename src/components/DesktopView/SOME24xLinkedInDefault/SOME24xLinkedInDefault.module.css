@@ -1,0 +1,18 @@
+.root {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  align-items: flex-start;
+}
+.icoLinkedin {
+  position: absolute;
+  left: 8.3333%;
+  right: 10.6163%;
+  top: 12.5%;
+  bottom: 13.0269%;
+  overflow: visible;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}

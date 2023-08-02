@@ -1,0 +1,30 @@
+stages:
+  - build
+  - deploy
+
+build:
+  image: node:lts
+  stage: build
+  script:
+    - yarn install
+    - yarn build
+  artifacts:
+    paths:
+      - build/
+
+pages:
+  image: alpine:latest
+  stage: deploy
+  variables:
+    GIT_STRATEGY: none  
+    NODE_ENV: production
+    PUBLIC_URL: https://lucas.macias.atala.gitlab.io/Wheelsky/
+  script:
+    # Rename the CRA `build` folder to `public`
+    - mv build public
+    - cp public/index.html public/404.html
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

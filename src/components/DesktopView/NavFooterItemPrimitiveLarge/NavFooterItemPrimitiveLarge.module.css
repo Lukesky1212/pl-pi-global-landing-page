@@ -1,0 +1,52 @@
+.down.down {
+  width: 16px;
+  height: 16px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.bg.bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: visible;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+.root {
+  width: min-content;
+  height: min-content;
+  flex-direction: column;
+}
+.inner {
+  width: min-content;
+  height: min-content;
+  align-self: flex-start;
+}
+.label {
+  width: min-content;
+  height: min-content;
+  align-self: flex-start;
+}
+.text {
+  width: min-content;
+  height: min-content;
+  align-self: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+.navLabel {
+  color: #a6a6a6;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 300;
+  font-family: Noi Grotesk, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.04em;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
