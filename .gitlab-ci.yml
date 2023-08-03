@@ -1,5 +1,3 @@
-image: alpine:latest
-
 stages:
   - build
   - deploy
@@ -12,7 +10,7 @@ build:
     - yarn build
   artifacts:
     paths:
-      - build/
+      - dist/
 
 pages:
   image: alpine:latest
@@ -22,9 +20,11 @@ pages:
     NODE_ENV: production
     PUBLIC_URL: https://lucas.atala.gitlab.io/GLP/
   script:
-    - cp build/index.html public/404.html
+    # Rename the CRA `build` folder to `public`
+    - mv dist public
+    - cp public/index.html public/404.html
   artifacts:
     paths:
-      - build
+      - public
   only:
-    - master
+    - main
