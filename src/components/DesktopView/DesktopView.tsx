@@ -46,7 +46,17 @@ interface Props {
     error?: boolean;
   };
 }
-/* @figmaId 701:24773 */
+
+function redirectInternal (url?: string) {
+  return window?.open(`https://developerhub.ppro.com${url ?? ''}`, '_blank')?.focus();
+}
+function redirectPPRO (url?: string) {
+  return window?.open(`https://www.ppro.com${url ?? ''}`, '_blank')?.focus();  
+}
+function redirectExternal (url?: string) {
+  return window?.open(`${url ?? 'https://www.ppro.com/404'}`, '_blank')?.focus();  
+}
+
 export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
@@ -55,9 +65,9 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
           <div className={classes.frame1527}>
             <div className={classes.container}>
               <div className={classes.logo}>
-                <div className={classes.devHubLogo}>
+                <button onClick={() => redirectPPRO()} className={classes.devHubLogo}>
                   <DevHubLogoIcon className={classes.icon13} />
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -86,7 +96,7 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                 </div>
               </div>
               <div className={classes.frame1514}>
-                <button className={classes.button} onClick={() => window?.open(url, '_blank')?.focus()}>
+                <button className={classes.button} onClick={() => redirectInternal()}>
                   <div className={classes.getStarted}>Get started</div>
                   <IconWrapper_UnionTrueSize24px
                     className={classes.iconWrapper}
