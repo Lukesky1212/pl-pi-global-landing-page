@@ -10,23 +10,21 @@ build:
     - yarn build
   artifacts:
     paths:
-      - build/
+      - build
 
 pages:
+  image: alpine:latest
   stage: deploy
-  cache:
-    key:
-      files:
-        - package-lock.json
-      prefix: npm
-    paths:
-      - node_modules/
+  variables:
+    GIT_STRATEGY: none  
+    NODE_ENV: production
+    PUBLIC_URL: https://lucas.atala.gitlab.io/GLP/
   script:
-    - npm install
-    - npm run build
-    - cp -a dist/. public/
+    # Rename the CRA `build` folder to `public`
+    - mv dist public
+    - cp public/index.html public/404.html
   artifacts:
     paths:
       - public
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  only:
+    - main
