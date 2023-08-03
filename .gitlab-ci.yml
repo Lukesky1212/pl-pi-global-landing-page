@@ -10,7 +10,7 @@ build:
     - yarn build
   artifacts:
     paths:
-      - build
+      - build/
 
 pages:
   image: alpine:latest
@@ -21,7 +21,7 @@ pages:
     PUBLIC_URL: https://lucas.atala.gitlab.io/GLP/
   script:
     # Rename the CRA `build` folder to `public`
-    - mv dist public
+    - mv build public
     - cp public/index.html public/404.html
   artifacts:
     paths:
