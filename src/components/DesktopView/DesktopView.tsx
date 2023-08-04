@@ -18,15 +18,12 @@ import { IcoLinkedinIcon } from './IcoLinkedinIcon.js';
 import { IconWrapper_UnionTrueSize16px } from './IconWrapper_UnionTrueSize16px/IconWrapper_UnionTrueSize16px';
 import { IconWrapper_UnionTrueSize24px } from './IconWrapper_UnionTrueSize24px/IconWrapper_UnionTrueSize24px';
 import { IcoTwitterIcon } from './IcoTwitterIcon.js';
-import { IcoYtIcon } from './IcoYtIcon.js';
-import { InputDefault_SizeXLargeStateDe } from './InputDefault_SizeXLargeStateDe/InputDefault_SizeXLargeStateDe';
 import { LeftVisualIcon2 } from './LeftVisualIcon2.js';
 import { LeftVisualIcon } from './LeftVisualIcon.js';
 import { NavFooterItem_TypeDefaultScree } from './NavFooterItem_TypeDefaultScree/NavFooterItem_TypeDefaultScree';
 import { SOME24xInstaDefault } from './SOME24xInstaDefault/SOME24xInstaDefault';
 import { SOME24xLinkedInDefault } from './SOME24xLinkedInDefault/SOME24xLinkedInDefault';
 import { SOME24xTwitterDefault } from './SOME24xTwitterDefault/SOME24xTwitterDefault';
-import { SOME24xYouTubeDefault } from './SOME24xYouTubeDefault/SOME24xYouTubeDefault';
 import { WrapperIcon2 } from './WrapperIcon2.js';
 import { WrapperIcon3 } from './WrapperIcon3.js';
 import { WrapperIcon4 } from './WrapperIcon4.js';
@@ -47,7 +44,7 @@ interface Props {
   };
 }
 
-function redirectInternal (url?: string) {
+function redirectDeveloperHub (url?: string) {
   return window?.open(`https://developerhub.ppro.com${url ?? ''}`, '_blank')?.focus();
 }
 function redirectPPRO (url?: string) {
@@ -96,7 +93,7 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                 </div>
               </div>
               <div className={classes.frame1514}>
-                <button className={classes.button} onClick={() => redirectInternal()}>
+                <button className={classes.button} onClick={() => redirectDeveloperHub('/global-api/docs')}>
                   <div className={classes.getStarted}>Get started</div>
                   <IconWrapper_UnionTrueSize24px
                     className={classes.iconWrapper}
@@ -105,7 +102,7 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                     }}
                   />
                 </button>
-                <button className={classes.button2} onClick={() => window?.open(url, '_blank')?.focus()}>
+                <button className={classes.button2} onClick={() => redirectDeveloperHub('/global-api/reference/introduction')}>
                   <div className={classes.aPIReference}>API Reference</div>
                 </button>
               </div>
@@ -162,15 +159,15 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                     </div>
                     <div className={classes.buttonsContainer}>
                       <div className={classes.ppro_icons_trust1}></div>
-                      <div className={classes.secondaryButton}>
+                      <button onClick={() => redirectDeveloperHub('/fraud-alerts/docs')} className={classes.secondaryButton}>
                         <div className={classes.textItem}>Contact us to get access</div>
                         <IconWrapper_UnionTrueSize24px
-                          className={classes.iconWrapper3}
+                          className={classes.iconWrapper6}
                           swap={{
-                            wrapper: <WrapperIcon3 className={classes.icon3} />,
+                            wrapper: <WrapperIcon6 className={classes.icon6} />,
                           }}
                         />
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -187,7 +184,7 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                     </div>
                     <div className={classes.buttonsContainer2}>
                       <div className={classes.ppro_icons_riskManagement1}></div>
-                      <div className={classes.secondaryButton2}>
+                      <button onClick={() => redirectDeveloperHub('/chargeback-disputes/docs')} className={classes.secondaryButton2}>
                         <div className={classes.textItem2}>View documentation</div>
                         <IconWrapper_UnionTrueSize24px
                           className={classes.iconWrapper4}
@@ -195,7 +192,7 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                             wrapper: <WrapperIcon4 className={classes.icon4} />,
                           }}
                         />
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -214,7 +211,7 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                     </div>
                     <div className={classes.buttonsContainer3}>
                       <div className={classes.ppro_icons_globalDigital1}></div>
-                      <div className={classes.secondaryButton3}>
+                      <button onClick={() => redirectDeveloperHub('/simple-api/docs')} className={classes.secondaryButton3}>
                         <div className={classes.textItem3}>View documentation</div>
                         <IconWrapper_UnionTrueSize24px
                           className={classes.iconWrapper5}
@@ -222,7 +219,7 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                             wrapper: <WrapperIcon5 className={classes.icon5} />,
                           }}
                         />
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -239,15 +236,15 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                     </div>
                     <div className={classes.buttonsContainer4}>
                       <div className={classes.ppro_icons_platform1}></div>
-                      <div className={classes.secondaryButton4}>
+                      <button onClick={() => redirectDeveloperHub('/ppaas/docs')} className={classes.secondaryButton4}>
                         <div className={classes.textItem4}>View documentation</div>
                         <IconWrapper_UnionTrueSize24px
-                          className={classes.iconWrapper6}
+                          className={classes.iconWrapper3}
                           swap={{
-                            wrapper: <WrapperIcon6 className={classes.icon6} />,
+                            wrapper: <WrapperIcon3 className={classes.icon3} />,
                           }}
                         />
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -304,7 +301,7 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
               </div>
             </div>
             <div className={classes.frame1515}>
-              <button className={classes.button3} onClick={() => window?.open(url, '_blank')?.focus()}>
+              <button className={classes.button3} onClick={() => redirectDeveloperHub('/global-api/docs')}>
                 <div className={classes.tryItNow}>Try it now</div>
                 <IconWrapper_UnionTrueSize24px
                   className={classes.iconWrapper7}
@@ -313,7 +310,7 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                   }}
                 />
               </button>
-              <button className={classes.button4} onClick={() => window?.open(url, '_blank')?.focus()}>
+              <button className={classes.button4} onClick={() => redirectDeveloperHub('/global-api/reference/introduction')}>
                 <div className={classes.aPIReference2}>API Reference</div>
               </button>
             </div>
@@ -333,58 +330,31 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                         text={{
                           navLabel: <div className={classes.navLabel5}>PPRO Global API</div>,
                         }}
+                        redirect={() => redirectDeveloperHub('/global-api/docs')}
                       />
                       <NavFooterItem_TypeDefaultScree
                         text={{
                           navLabel: <div className={classes.navLabel6}>Fraud Alerts API</div>,
                         }}
+                        redirect={() => redirectDeveloperHub('/fraud-alerts/docs')}
                       />
                       <NavFooterItem_TypeDefaultScree
                         text={{
                           navLabel: <div className={classes.navLabel7}>Chargeback Disputes API</div>,
                         }}
+                        redirect={() => redirectDeveloperHub('/chargeback-disputes/docs')}
                       />
                       <NavFooterItem_TypeDefaultScree
                         text={{
                           navLabel: <div className={classes.navLabel8}>Simple API</div>,
                         }}
+                        redirect={() => redirectDeveloperHub('/simple-api/docs')}
                       />
                       <NavFooterItem_TypeDefaultScree
                         text={{
                           navLabel: <div className={classes.navLabel9}>Acquiring Platform as a Service API</div>,
                         }}
-                      />
-                    </div>
-                  </div>
-                  <div className={classes.column2}>
-                    <div className={classes.title2}>
-                      <div className={classes.paymentMethods}>Payment Methods</div>
-                    </div>
-                    <div className={classes.list2}>
-                      <NavFooterItem_TypeDefaultScree
-                        text={{
-                          navLabel: <div className={classes.navLabel10}>Asia Pacific</div>,
-                        }}
-                      />
-                      <NavFooterItem_TypeDefaultScree
-                        text={{
-                          navLabel: (
-                            <div className={classes.navLabel11}>
-                              <div className={classes.textBlock}>Europe, The Middle </div>
-                              <div className={classes.textBlock2}>East and Africa</div>
-                            </div>
-                          ),
-                        }}
-                      />
-                      <NavFooterItem_TypeDefaultScree
-                        text={{
-                          navLabel: <div className={classes.navLabel12}>The Americas</div>,
-                        }}
-                      />
-                      <NavFooterItem_TypeDefaultScree
-                        text={{
-                          navLabel: <div className={classes.navLabel13}>Show All</div>,
-                        }}
+                        redirect={() => redirectDeveloperHub('/ppaas/docs')}
                       />
                     </div>
                   </div>
@@ -395,18 +365,15 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                     <div className={classes.list3}>
                       <NavFooterItem_TypeDefaultScree
                         text={{
-                          navLabel: <div className={classes.navLabel14}>Contact us</div>,
+                          navLabel: <div className={classes.navLabel14}>Sales Team</div>,
                         }}
+                        redirect={() => redirectPPRO('/contact/sales/')}
                       />
                       <NavFooterItem_TypeDefaultScree
                         text={{
-                          navLabel: <div className={classes.navLabel15}>Tech. support</div>,
+                          navLabel: <div className={classes.navLabel15}>PR Team</div>,
                         }}
-                      />
-                      <NavFooterItem_TypeDefaultScree
-                        text={{
-                          navLabel: <div className={classes.navLabel16}>Contact PR </div>,
-                        }}
+                        redirect={() => redirectPPRO('/news/#pr')}
                       />
                     </div>
                   </div>
@@ -414,7 +381,7 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
               </div>
             </div>
             <div className={classes.info}>
-              <div className={classes.about}>
+              <button onClick={() => redirectPPRO()} className={classes.about}>
                 <div className={classes.logo2}>
                   <div className={classes.big}>
                     <BasicLogoPPRO
@@ -433,9 +400,9 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                 <div className={classes.copy}>
                   <div className={classes.DeveloperHub}>&#123;Developer hub&#125;</div>
                 </div>
-              </div>
+              </button>
               <div className={classes.social}>
-                <div className={classes.item}>
+                <button onClick={() => redirectExternal('https://twitter.com/ppro_payments/')} className={classes.item}>
                   <SOME24xTwitterDefault
                     className={classes.sOME24xTwitterDefault}
                     classes={{ bg: classes.bg }}
@@ -443,8 +410,8 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                       icoTwitter: <IcoTwitterIcon className={classes.icon9} />,
                     }}
                   />
-                </div>
-                <div className={classes.item2}>
+                </button>
+                <button onClick={() => redirectExternal('https://www.linkedin.com/company/ppro/mycompany/verification/')} className={classes.item2}>
                   <SOME24xLinkedInDefault
                     className={classes.sOME24xLinkedInDefault}
                     classes={{ bg: classes.bg2 }}
@@ -452,17 +419,8 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                       icoLinkedin: <IcoLinkedinIcon className={classes.icon10} />,
                     }}
                   />
-                </div>
-                <div className={classes.item3}>
-                  <SOME24xYouTubeDefault
-                    className={classes.sOME24xYouTubeDefault}
-                    classes={{ bg: classes.bg3 }}
-                    swap={{
-                      icoYt: <IcoYtIcon className={classes.icon11} />,
-                    }}
-                  />
-                </div>
-                <div className={classes.item4}>
+                </button>
+                <button onClick={() => redirectExternal('https://www.instagram.com/ppro_payments/')} className={classes.item4}>
                   <SOME24xInstaDefault
                     className={classes.sOME24xInstaDefault}
                     classes={{ bg: classes.bg4 }}
@@ -470,7 +428,7 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                       icoInsta: <IcoInstaIcon className={classes.icon12} />,
                     }}
                   />
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -484,18 +442,15 @@ export const DesktopView: FC<Props> = memo(function DesktopView(props = {}) {
                     </div>
                   </div>
                   <div className={classes.menu2}>
-                    <div className={classes.item5}>
+                    <button onClick={() => redirectPPRO('/disclaimer/')} className={classes.item5}>
                       <div className={classes.dsiclaimer}>Dsiclaimer</div>
-                    </div>
-                    <div className={classes.item6}>
+                    </button>
+                    <button onClick={() => redirectPPRO('/privacy-notice/')} className={classes.item6}>
                       <div className={classes.privacyNotice}>Privacy notice</div>
-                    </div>
-                    <div className={classes.item7}>
-                      <div className={classes.privacySettings}>Privacy settings</div>
-                    </div>
-                    <div className={classes.item8}>
+                    </button>  
+                    <button onClick={() => redirectPPRO('/ppro-entities/')} className={classes.item8}>
                       <div className={classes.pPROEntities}>PPRO entities</div>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </div>

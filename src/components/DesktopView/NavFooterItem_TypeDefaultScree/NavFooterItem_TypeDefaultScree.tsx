@@ -17,11 +17,12 @@ interface Props {
   text?: {
     navLabel?: ReactNode;
   };
+  redirect?: () => any;
 }
-/* @figmaId 22:3267 */
+
 export const NavFooterItem_TypeDefaultScree: FC<Props> = memo(function NavFooterItem_TypeDefaultScree(props = {}) {
   return (
-    <div className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
+    <button onClick={props.redirect} className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
       <NavFooterItemPrimitiveLarge
         className={`${props.classes?.navFooterItemPrimitiveLarge || ''} ${classes.navFooterItemPrimitiveLarge}`}
         classes={{
@@ -33,6 +34,6 @@ export const NavFooterItem_TypeDefaultScree: FC<Props> = memo(function NavFooter
           navLabel: props.text?.navLabel || <div className={classes.navLabel}>Nav Label</div>,
         }}
       />
-    </div>
+    </button>
   );
 });
