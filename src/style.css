@@ -1,0 +1,443 @@
+@font-face {
+    font-family: noi-grotesk-regular;
+    src: local("noigroteskregular"), url(fonts/noigroteskregular.ttf);
+}
+
+@font-face {
+    font-family: noi-grotesk-medium;
+    src: local("noigroteskmedium"), url(fonts/noigroteskmedium.ttf);
+}
+
+@font-face {
+    font-family: noi-grotesk-bold;
+    src: local("noigroteskbold"), url(fonts/noigrotesknold.ttf);
+}
+
+
+body {
+    font-family: noi-grotesk-regular;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #000;
+}
+
+/* Banner start  */
+.banner {
+    padding: 80px 0 100px 0;
+    background-image: linear-gradient(180deg,
+            hsl(0deg 0% 0%) 0%,
+            hsl(276deg 53% 7%) 29%,
+            hsl(276deg 36% 8%) 51%,
+            hsl(274deg 37% 4%) 100%);
+}
+
+.banner h3 {
+    font-family: noi-grotesk-regular;
+    color: #2674E0;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.banner h1 {
+    font-family: noi-grotesk-medium;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #fff;
+    font-size: 56px;
+}
+
+.banner h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.banner p {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.banner-btn-pair .pair-one {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+}
+
+.banner-btn-pair .pair-two {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* banner end  */
+
+
+
+/* api sec start  */
+.api-sec {
+    background-color: #0A060D;
+    padding: 100px 0;
+    position: relative;
+}
+
+.api-big-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.api-big-img img {
+    width: 400px;
+}
+
+.all-api-left h3 {
+    margin: 18px 0;
+    color: #2674E0;
+    font-family: noi-grotesk-medium;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.all-api-left h2 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.single-api {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 450px;
+    padding: 35px 25px;
+    border: 1px solid #281932;
+    border-radius: 30px;
+}
+
+.single-api h2 {
+    margin-bottom: 20px;
+    font-family: noi-grotesk-medium;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.single-api p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.single-api a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: #fff !important;
+}
+
+/* api sec end  */
+
+/* getting-start start  */
+
+.getting-start {
+    padding: 150px 0 100px 0;
+    position: relative;
+}
+
+.get-start-icon {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+.getting-start h2 {
+    font-family: noi-grotesk-regular;
+    color: #0A060D;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.getting-start h3 {
+    font-family: noi-grotesk-bold;
+    margin-bottom: 60px;
+    font-weight: 700;
+    color: #2674E0;
+    font-size: 28px;
+}
+
+.single-start-step {
+    border-radius: 30px;
+    padding: 30px 25px;
+    background-color: #281932;
+}
+
+.single-start-step p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.get-start-btn-pair .pair-one {
+    background-color: transparent;
+    color: #281932;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #281932;
+    padding: 12px 24px;
+    border-radius: 30px;
+}
+
+.get-start-btn-pair .pair-two {
+    color: #281932;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* getting-start end  */
+
+footer {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-color: #000000;
+}
+
+footer h2 {
+    margin-bottom: 25px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+footer .imp-link li {
+    margin: 10px 0;
+}
+
+footer .imp-link a {
+    text-decoration: none;
+    color: #777;
+    font-size: 17px;
+}
+
+.social-link li {
+    margin-right: 30px !important;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .banner {
+        padding-bottom: 50px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner h2 {
+        font-size: 18px;
+    }
+
+    .banner p {
+        font-size: 15px;
+    }
+
+    .cc-gap {
+        display: none;
+    }
+
+    /* api sec start  */
+    .api-sec {
+        padding: 60px 0;
+    }
+
+    .single-api {
+        min-height: 400px;
+    }
+
+    .api-big-img {
+        display: none;
+    }
+
+    .all-api-left h2 {
+        font-size: 24px;
+    }
+
+    .single-api h2 {
+        font-size: 20px;
+    }
+
+    .single-api p {
+        font-size: 16px;
+    }
+
+    .social-link li {
+        margin-right: 20px !important;
+    }
+
+    /* api sec end  */
+
+    /* get start  */
+    .get-start-icon {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    .get-start-icon img {
+        width: 70%;
+    }
+
+    .getting-start h2 {
+        font-size: 18px;
+    }
+
+    .getting-start h3 {
+        margin-bottom: 60px;
+        font-size: 18px;
+    }
+
+    /* get end  */
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .banner {
+        padding-bottom: 50px;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+    }
+
+    .banner h2 {
+        font-size: 18px;
+    }
+
+    .banner p {
+        font-size: 15px;
+    }
+
+    /* api sec start  */
+    .api-sec {
+        padding: 60px 0;
+    }
+
+    .single-api {
+        padding: 30px 20px;
+    }
+
+    .api-big-img {
+        display: none;
+    }
+
+    .all-api-left h2 {
+        font-size: 24px;
+    }
+
+    .single-api h2 {
+        font-size: 20px;
+    }
+
+    .single-api p {
+        font-size: 16px;
+    }
+
+    .social-link li {
+        margin-right: 20px !important;
+    }
+
+    /* api sec end  */
+
+    /* get start  */
+    .get-start-icon {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    .get-start-icon img {
+        width: 70%;
+    }
+
+    /* get end  */
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .banner h2 {
+        font-size: 20px;
+    }
+
+    /* api sec start  */
+    .api-sec {
+        padding: 70px 0;
+    }
+
+    .api-big-img {
+        display: none;
+    }
+
+    .all-api-left h2 {
+        font-size: 24px;
+    }
+
+    .single-api h2 {
+        font-size: 20px;
+    }
+
+    .single-api p {
+        font-size: 16px;
+    }
+
+    .social-link li {
+        margin-right: 20px !important;
+    }
+
+    /* api sec end  */
+
+    /* get start  */
+    .get-start-icon {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    /* get end  */
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .all-api-left h2 {
+        font-size: 24px;
+    }
+
+    .single-api h2 {
+        font-size: 20px;
+    }
+
+    .single-api p {
+        font-size: 16px;
+    }
+
+    .social-link li {
+        margin-right: 20px !important;
+    }
+
+}
