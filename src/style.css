@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: noi-grotesk-bold;
-    src: local("noigroteskbold"), url(fonts/noigrotesknold.ttf);
+    src: local("noigroteskbold"), url(fonts/noigroteskbold.ttf);
 }
 
 
@@ -21,6 +21,10 @@ body {
 header {
     padding: 20px 0;
     background-color: #000;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 /* Banner start  */
