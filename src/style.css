@@ -13,22 +13,16 @@
     src: local("noigroteskbold"), url(fonts/noigroteskbold.ttf);
 }
 
-
 body {
     font-family: noi-grotesk-regular;
-    background: #0A060D;
-}
-
-header {
-    padding: 20px 0;
-    background-color: #000;
+    background: #000000;
 }
 
 p {
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 150%; /* 24px */
+    line-height: 150%; 
     letter-spacing: 0.64px;
 }
 
@@ -40,7 +34,7 @@ p {
 .banner {
     padding: 80px 0 100px 0;
     background-color: #0a060d;
-    background: radial-gradient(100.00% 100.00% at 50% -0.00%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.13) 22.93%, rgba(0, 0, 0, 0.00) 62.03%, #170F1C 67.89%, rgba(23, 17, 27, 0.17) 77.02%, rgba(23, 19, 26, 0.00) 87.80%, rgba(0, 0, 0, 0.00) 100%);
+    background: radial-gradient(100.00% 100.00% at 50% -0.00%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.13) 22.93%, rgba(0, 0, 0, 0.00) 62.03%, #281932f2  67.89%, rgba(23, 17, 27, 0.17) 77.02%, rgba(23, 19, 26, 0.00) 87.80%, rgba(0, 0, 0, 0.00) 100%);
       
 }
 
@@ -99,7 +93,7 @@ p {
 
 /* api sec start  */
 .api-sec {
-    background-color: #0A060D;
+    /* background-color: #0A060D; */
     padding: 100px 0;
     position: relative;
 }
@@ -226,7 +220,7 @@ p {
 /* getting-start end  */
 
 footer {
-    padding-top: 100px;
+    padding-top: 140px;
     padding-bottom: 30px;
     background-color: #000000;
 }
