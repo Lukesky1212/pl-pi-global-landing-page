@@ -13,6 +13,11 @@
     src: local("noigroteskbold"), url(fonts/noigroteskbold.ttf);
 }
 
+@font-face {
+    font-family: noi-grotesk-light;
+    src: local("noigrotesklight"), url(fonts/noigrotesklight.otf);
+}
+
 body {
     font-family: noi-grotesk-regular;
     background: #000000;
@@ -31,10 +36,18 @@ p {
 }
 
 .lightfont {
-    font-family: "noigroteskregular" !important;
+    font-family: "noi-grotesk-light" !important;
     font-style: normal !important;
     font-weight: 300 !important;
     line-height: 150% !important;
+}
+
+.flex-anchor {
+    display: flex !important;
+}
+
+.btn-right {
+    margin-left: auto;
 }
 
 /* Banner start  */
