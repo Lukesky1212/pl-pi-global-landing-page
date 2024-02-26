@@ -8,6 +8,7 @@ import { DesktopView } from './components/DesktopView/DesktopView';
 interface Props {
   className?: string;
 }
+
 export const App: FC<Props> = memo(function App(props = {}) {
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
